@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ZeroBot - Início</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Fonte importada (caso não tenha no style.css) */
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap');
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: #fff8fc;
+      color: #3a003a;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #ff99cc;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: white;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      list-style: none;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+      padding: 10px 22px;
+      border-radius: 30px;
+      background-color: #ff66a3;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      background-color: #e60073;
+    }
+
+    main {
+      flex: 1;
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 0 20px;
+      animation: fadeIn 0.7s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Seção Sobre ZeroBot */
+    .sobre-zerobot {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-bottom: 60px;
+    }
+
+    .sobre-zerobot img {
+      max-width: 320px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(255, 102, 163, 0.3);
+      flex-shrink: 0;
+      animation: floatUp 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes floatUp {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-15px); }
+    }
+
+    .sobre-zerobot .texto {
+      flex: 1 1 300px;
+      color: #5c004d;
+    }
+
+    .sobre-zerobot h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #cc007a;
+    }
+
+    .sobre-zerobot p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .botao-discord {
+      display: inline-block;
+      background: linear-gradient(145deg, #ff80bf, #ff4d94);
+      color: white;
+      text-decoration: none;
+      padding: 14px 36px;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(255, 77, 148, 0.4);
+    }
+
+    .botao-discord:hover {
+      background: linear-gradient(145deg, #ff4d94, #ff80bf);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 16px rgba(255, 77, 148, 0.6);
+    }
+
+    footer {
+      background: none;
+      padding: 10px 20px;
+      text-align: right;
+      font-size: 0.85rem;
+      color: #999;
+      border-top: 1px solid #eee;
+      margin-top: auto;
+    }
+
+    @media (max-width: 720px) {
+      .sobre-zerobot {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .sobre-zerobot img {
+        max-width: 280px;
+        margin-bottom: 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ZeroBot</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" aria-current="page">Início</a></li>
+        <li><a href="comandos.html">Comandos</a></li>
+        <li><a href="vips.html">VIPs</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="sobre-zerobot" aria-label="Sobre a ZeroBot">
+      <img src="https://i.imgur.com/J5LVHEL.png" alt="Ilustração da Zero Two estilizada para ZeroBot" />
+      <div class="texto">
+        <h2>🌸 Conheça a ZeroBot</h2>
+        <p>
+          A ZeroBot nasceu da paixão por animes e da vontade de criar um bot que fosse mais do que apenas comandos: ela é uma companheira, inspirada na personagem <strong>Zero Two</strong> de Darling in the Franxx.
+        </p>
+        <p>
+          Dizem que, em um universo digital paralelo, uma inteligência foi criada para ajudar comunidades no Discord, combinando elegância, eficiência e um toque único de charme feminino.
+        </p>
+        <p>
+          ZeroBot não só oferece recursos completos de economia, moderação, utilidades e diversão, mas também traz uma personalidade marcante que cativa todos que a conhecem.
+        </p>
+        <p>
+          Sempre em evolução, a ZeroBot tem planos de recursos VIP para recompensar seus apoiadores e crescer junto com sua comunidade.
+        </p>
+        <a href="https://discord.com/oauth2/authorize?client_id=1373338348462145567&scope=bot" class="botao-discord" aria-label="Adicionar ZeroBot no Discord">➕ Me adicione no seu servidor!</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    ZeroBot © Todos os direitos reservados
+  </footer>
+</body>
+</html>
